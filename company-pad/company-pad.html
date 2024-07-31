@@ -21,56 +21,55 @@
 			border: 0;
 			padding: 0;
 			font-family: "JetBrains Mono", monospace;
-			color: #222222;
+			color: #666666;
 		}
 
-		@page
-		{
-			size: A4;
-		}
-			@font-face {
+		@font-face
+			{
 				font-family: bankNumber;
 				src: url(/assets/bank-fonts/MicrEncoding-ZEDJ.ttf);
 			}
 
-		html
+		@media print
 		{
-			margin: 0 auto;
+			@page
+			{
+				size: A4;
+				margin: 0;
+			}
 		}
 
-		body
+		.container
 		{
-			margin: 0 auto;
-			padding: 36px;
 			width: 210mm;
 			height: 297mm;
+			margin: 0 auto;
+			padding: 36px;
 		}
 
-		.header
-		{
-			display: flex;
-			justify-content: space-between;
-			align-items: top;
-		}
-		img.imgLogo
-		{
-			width: 222px;
-		}
-			.letter-logo
-			{
-				display: block;
-			}
-			.address
+			.header
 			{
 				display: flex;
-				padding: 0 1%;
 				justify-content: space-between;
 			}
-				.column1, .column2, .column3
+				.imgLogo
 				{
-					display: block;
-					font-size: 6pt;
+					max-width: 222px;
 				}
+				.letLogo
+				{
+					max-width: 100%;
+				}
+				.address
+				{
+					display: flex;
+					justify-content: space-between;
+					padding: 0 1%;
+				}
+					.column1, .column2, .column3
+					{
+						font-size: 6pt;
+					}
 					.column1
 					{
 						text-align: left;
@@ -79,99 +78,94 @@
 					{
 						text-align: center;
 					}
+					.column3
+					{
+						text-align: right;
+					}
 					.pnumbers
 					{
 						display: flex;
 						justify-content: space-between;
 					}
-					.column3
-					{
-						text-align: right;
-					}
-				p
-				{
-					color: #666666;
-				}
 
 		.content
 		{
-			margin: 0 auto;
-			height: 246mm;
+			flex-grow: 1;
+			min-height: 246mm;
 		}
 
 		.footer
 		{
 			display: flex;
-			padding-bottom: 0;
 			justify-content: space-between;
 			align-items: center;
 		}
-			hr
-			{
-				border: 1px solid #222222;
-			}
+		.footer hr
+		{
+			border: 1px solid #666666;
+		}
 			.leftb
 			{
-				width: 56%;
-			}
-			.bankNumber
-			{
-				font-family: bankNumber;
-				font-size: 18pt;
+				width: 66%;
 			}
 			.rightb
 			{
 				width: 11%;
 			}
-
+			.bankNumber
+			{
+				font-family: bankNumber;
+			}
 
 	</style>
 
 	<body>
-		<div class="header">
-			<div class="image-logo">
-				<img
-					class="imgLogo"
-					src="/assets/company-logo/winarCompanyLogo222222.webp"
-					alt="Wedgefort-Company-Logo"
-				/>
-			</div>
-			<div class="letter-logo">
-				<img
-					class="letLogo"
-					src="/assets/letter-logo/wedgefort-letter-logo.webp"
-					alt="Wedgefort-Letter-Logo"
-				/>
-				<div class="address">
-					<div class="column1">
-						<p>CORPORATE OFFICE</p>
-						<p>PHONE NUMBERS</p>
-					</div>
-					<div class="column2">
-						<p>Flat 1B, House 48, Road 15, Banani, Dhaka 1212</p>
-						<div class="pnumbers">
-							<p>+8801769201234</p>
-							<p>+8801706869749</p>
+		<div class="container">
+			<div class="header">
+				<div class="image-logo">
+					<img
+						class="imgLogo"
+						src="/assets/company-logo/winarCompanyLogo222222.webp"
+						alt="Wedgefort-Company-Logo"
+					/>
+				</div>
+				<div class="letter-logo">
+					<img
+						class="letLogo"
+						src="/assets/letter-logo/wedgefort-letter-logo.webp"
+						alt="Wedgefort-Letter-Logo"
+					/>
+					<div class="address">
+						<div class="column1">
+							<p>CORPORATE OFFICE</p>
+							<p>PHONE NUMBERS</p>
 						</div>
-					</div>
-					<div class="column3">
-						<p>https://wedgefort.com/</p>
-						<p>ceo@wedgefort.com</p>
+						<div class="column2">
+							<p>Flat 1B, House 48, Road 15, Banani, Dhaka 1212</p>
+							<div class="pnumbers">
+								<p>+8801769201234</p>
+								<p>+8801706869749</p>
+							</div>
+						</div>
+						<div class="column3">
+							<p>https://wedgefort.com/</p>
+							<p>ceo@wedgefort.com</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="content">
-		</div>
-		<div class="footer">
-			<div class="leftb">
-				<hr>
+			<div class="content">
 			</div>
-			<div class="bankNumber">
-				d 0002 - 0210427339
-			</div>
-			<div class="rightb">
-				<hr>
+			<div class="footer">
+				<div class="leftb">
+					<hr>
+				</div>
+				<div class="bankNumber">
+					d 0002 - 0210427339
+				</div>
+				<div class="rightb">
+					<hr>
+				</div>
 			</div>
 		</div>
 	</body>

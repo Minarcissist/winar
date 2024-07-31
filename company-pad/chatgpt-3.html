@@ -5,31 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Pad</title>
     <style>
+        /* Reset margins and padding for the page */
         body, html {
-            height: 100%;
             margin: 0;
+            padding: 0;
+            height: 100%;
             font-family: Arial, sans-serif;
         }
+        /* Set up a flex container for the page layout */
         .container {
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Full viewport height */
+            min-height: 100vh;
         }
-        .header, .footer {
-            text-align: center;
-            padding: 20px;
-            background: #f1f1f1;
-        }
+        /* Header styling */
         .header {
+            padding: 20px;
+            text-align: center;
             border-bottom: 2px solid #000;
         }
+        /* Footer styling, with margin-top: auto to push it to the bottom */
         .footer {
-            margin-top: auto; /* Push footer to bottom */
+            padding: 10px;
+            text-align: center;
             border-top: 1px solid #000;
+            margin-top: auto;
         }
+        /* Main content area, flex-grow: 1 to fill available space */
         .content {
-            flex-grow: 1; /* Take up remaining space */
+            flex-grow: 1;
             padding: 20px;
+        }
+        /* Specific styling for A4 size */
+        @media print {
+            @page {
+                size: A4; /* Set page size to A4 */
+                margin: 0; /* Remove default browser margin */
+            }
+            .container {
+                width: 210mm; /* A4 width */
+                height: 297mm; /* A4 height */
+                margin: auto; /* Center the page */
+                padding: 20mm; /* Padding around content */
+                box-sizing: border-box;
+            }
         }
     </style>
 </head>
@@ -46,7 +65,7 @@
             </div>
         </div>
         <div class="content">
-            Content goes here
+            <!-- Your content goes here -->
         </div>
         <div class="footer">
             <p>Company Name | Address | Phone | Email</p>
