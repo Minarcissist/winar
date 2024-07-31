@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Pad</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full viewport height */
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        .header {
+            border-bottom: 2px solid #000;
+        }
+        .footer {
+            margin-top: auto; /* Push footer to bottom */
+            border-top: 1px solid #000;
+        }
+        .content {
+            flex-grow: 1; /* Take up remaining space */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="company-logo.png" alt="Company Logo" style="max-width: 200px;">
+            <div class="company-info">
+                <p>Company Name</p>
+                <p>Address Line 1</p>
+                <p>Address Line 2</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@company.com</p>
+            </div>
+        </div>
+        <div class="content">
+            Content goes here
+        </div>
+        <div class="footer">
+            <p>Company Name | Address | Phone | Email</p>
+        </div>
+    </div>
+</body>
+</html>
