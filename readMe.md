@@ -1,3 +1,3 @@
-# Winar INC Official Company Pad
+# Winar INC Official Company Pads
 
-[Official-Company-Pad](company-pad/company-pad.html)
+1. [Wedgefort Company Pad](company-pads/wedgefort/companyPad.pdf)
