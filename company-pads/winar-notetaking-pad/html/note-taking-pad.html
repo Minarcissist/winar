@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedgefort Company Pad</title>
+  <title>Document</title>
   <!-- importing fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,47 +58,68 @@ html, body
 {
   display: flex;
   justify-content: space-between;
+  border: 1px solid #666666;
+  padding: 24px 36px;
 }
   .imglogo
   {
-    max-width: 222px;
-  }
-  .letterlogo
-  {
-    width: 540px;
+    max-width: 180px;
   }
 
 .content
 {
+  margin-top: 24px;
+  border: 1px solid #666666;
   flex-grow: 1;
 }
 
 .footer
 {
+  margin-top: 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-  .fcol1
+  .remarks
   {
-    width: 56%;
+    width: 480px;
+    height: 90px;
+    border: 1px solid #666666;
   }
-    hr
-    {
-      border: 1px solid #666666;
-      border-radius: 6px;
-    }
-  .fcol2
+  .roundseal
   {
-    font-size: 15pt;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #666666;
+    border-radius: 45px;
   }
-    .fcol2
-    {
-      font-family: bank;
-    }
-  .fcol3
+  .signature
   {
-    width: 11%;
+    width: 180px;
+    height: 90px;
+    border: 1px solid #666666;
+  }
+
+.liners
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+hr
+{
+  border: 1px solid #666666;
+}
+  .lcol1
+  {
+    width: 480px;
+  }
+  .lcol2
+  {
+    font-family: bank;
+  }
+  .lcol3
+  {
+    width: 180px;
   }
 
 </style>
@@ -106,32 +127,35 @@ html, body
 <body>
   <div class="container">
     <div class="header">
-      <div class="col1">
+      <div class="left">
         <img
-        class="imglogo"
-        src="winarCompanyLogo222222.png"
-        alt="Wedgefort Company Logo"
-        >
-      </div>
-      <div class="col2">
-        <img
-        class="letterlogo"
-        src="wedgefort-letter-logo.png"
-        alt="Wedgefort Company Letter Logo"
+          class="imglogo"
+          src="winarCompanyLogo222222.png"
+          alt=""
         >
       </div>
     </div>
     <div class="content">
-      <!-- Insert your content here -->
     </div>
     <div class="footer">
-      <div class="fcol1">
+      <div class="remarks">
+
+      </div>
+      <div class="roundseal">
+
+      </div>
+      <div class="signature">
+
+      </div>
+    </div>
+    <div class="liners">
+      <div class="lcol1">
         <hr>
       </div>
-      <div class="fcol2">
-        d 0002 - 0210427339
+      <div class="lcol2">
+        01769201234
       </div>
-      <div class="fcol3">
+      <div class="lcol3">
         <hr>
       </div>
     </div>
