@@ -1,17 +1,12 @@
+<!-- Coded by Minarcissist -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wedgefort Company Pad</title>
-  <!-- importing fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-</head>
-
 <style>
-
 html, body
 {
   margin: auto;
@@ -20,7 +15,7 @@ html, body
   box-sizing: border-box;
   font-family: Jetbrains Mono, Monospace;
 }
-
+/* for ctrl+p function on keyboard */
 @media print
 {
   @page
@@ -29,112 +24,168 @@ html, body
     margin: 0;
   }
 }
-
+/* custom font face - banking fonts */
 @font-face
 {
   font-family: bank;
   src: url(MicrEncoding-ZEDJ.ttf);
 }
-
+/* disabling scrollbar while scrolling */
 ::-webkit-scrollbar
 {
   display: none;
   scrollbar-width: none;
 }
-
-.container
-{
-  margin: 0 auto;
-  border: 0;
-  padding: 36px;
-  width: 210mm;
-  height: 304mm;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.header
-{
-  display: flex;
-  justify-content: space-between;
-}
-  .imglogo
-  {
-    max-width: 222px;
-  }
-  .letterlogo
-  {
-    width: 540px;
-  }
-
-.content
-{
-  flex-grow: 1;
-}
-
-.footer
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-  hr
-  {
-    border: 1px solid #222222;
-    border-radius: 6px;
-  }
-  .fcol1
-  {
-    width: 56%;
-  }
-  .fcol2
-  {
-    font-size: 15pt;
-  }
-    .fcol2
-    {
-      font-family: bank;
-    }
-  .fcol3
-  {
-    width: 11%;
-  }
-
 </style>
+</head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="col1">
-        <img
-        class="imglogo"
-        src="winarCompanyLogo222222.png"
-        alt="Wedgefort Company Logo"
-        >
+  <div
+    class="container"
+    style="
+    margin: 0 auto;
+    border: 0;
+    padding: 36px;
+    width: 210mm;
+    height: 304mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  ">
+    <div
+      class="header"
+      style="
+      max-height: 180px;
+      display: flex;
+      justify-content: space-between;
+    ">
+      <div
+        class="header-c1">
+          <img
+            src="winarCompanyLogo222222.png"
+            alt=""
+            class="imglogo"
+            style="
+            max-height: 180px;
+          ">
       </div>
-      <div class="col2">
-        <img
-        class="letterlogo"
-        src="wedgefort-letter-logo.png"
-        alt="Wedgefort Company Letter Logo"
-        >
+      <div
+        class="header-c2"
+        style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 180px;
+      ">
+        <div
+          class="header-c2-r1"
+          style="
+          text-align: right;
+          font-size: 90px;
+        ">
+          <img
+            src="wedgefort-letter-logo.png"
+            alt=""
+            class="letterlogo"
+            style="
+            height: 180px;
+          ">
+        </div>
+        <div
+          class="header-c2-r2"
+          style="
+          display: flex;
+          font-weight: bold;
+          font-size: 9px;
+        ">
+          <div
+            class="header-c2-r2-c1"
+            style="
+            text-align: left;
+            padding-right: 2vw;
+          ">
+            <div>
+              OFFICIAL PHONE
+            </div>
+            <div>
+              +8801769201234
+            </div>
+          </div>
+          <div
+            class="header-c2-r2-c2"
+            style="
+            text-align: center;
+          ">
+            <div>
+              CORPORATE ADDRESS
+            </div>
+            <div>
+              Office B1, Building Number 48, Road Number 15, Banani, Dhaka 1213
+            </div>
+          </div>
+          <div
+            class="header-c2-r2-c3"
+            style="
+            text-align: right;
+            padding-left: 2vw;
+          ">
+            <div>
+              https://wedgefort.com/
+            </div>
+            <div>
+              ceo@wedgefort.com
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="content">
-      <!-- Insert your content here -->
+    <div
+      class="content-box"
+      style="
+      flex-grow: 1;
+    ">
+    <!-- empty page for the company pad -->
     </div>
-    <div class="footer">
-      <div class="fcol1">
-        <hr>
+    <div
+      class="footer"
+      style="
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    ">
+      <div
+        class="footer-c1"
+        style="
+        width: 56%;
+      ">
+        <hr
+          style="
+            border: 1px solid #222222;
+            border-radius: 1px;
+        ">
       </div>
-      <div class="fcol2">
+      <div
+        class="bank"
+        style="
+        font-family: bank;
+        font-size: 18pt;
+        font-weight: bold;
+      ">
         d 0002 - 0210427339
       </div>
-      <div class="fcol3">
-        <hr>
+      <div
+        class="footer-c2"
+        style="
+        width: 10%;">
+        <hr
+          style="
+            border: 1px solid #222222;
+            border-radius: 1px;
+        ">
       </div>
     </div>
+
   </div>
 </body>
 </html>
