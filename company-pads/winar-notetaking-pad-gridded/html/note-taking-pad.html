@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- importing fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+html, body
+{
+  margin: auto;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Jetbrains Mono, Monospace;
+}
+
+@media print
+{
+  @page
+  {
+    size: A4;
+    margin: 0;
+  }
+}
+
+@font-face
+{
+  font-family: bank;
+  src: url(MicrEncoding-ZEDJ.ttf);
+}
+
+::-webkit-scrollbar
+{
+  display: none;
+  scrollbar-width: none;
+}
+
+.container
+{
+  margin: 0 auto;
+  border: 0;
+  padding: 36px;
+  width: 210mm;
+  height: 304mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header
+{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #222222;
+  padding: 12px 18px;
+}
+  .imglogo
+  {
+    max-width: 180px;
+  }
+  .letterlogo
+  {
+    max-width: 480px;
+  }
+
+.content-box
+{
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.footer
+{
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+  .remarks
+  {
+    width: 450px;
+    height: 120px;
+    border: 1px solid #222222;
+  }
+  .roundseal
+  {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #222222;
+    border-radius: 120px;
+  }
+  .signature
+  {
+    width: 180px;
+    height: 120px;
+    border: 1px solid #222222;
+  }
+
+.liners
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+  hr
+  {
+    border: 1px solid #222222;
+    border-radius: 6px;
+  }
+  .lcol1
+  {
+    width: 450px;
+  }
+  .lcol2
+  {
+    font-family: bank;
+  }
+  .lcol3
+  {
+    width: 180px;
+  }
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="hleft">
+        <img
+          class="imglogo"
+          src="winarCompanyLogo222222.png"
+          alt=""
+        >
+      </div>
+      <div class="hright">
+        <img
+          class="letterlogo"
+          src="winar-letter-logo.png"
+          alt="winar-letter-logo"
+        >
+      </div>
+    </div>
+    <div class="content">
+      <img class="content-box" src="grid.png" alt="graph-box">
+    </div>
+    <div class="footer">
+      <div class="remarks">
+
+      </div>
+      <div class="roundseal">
+
+      </div>
+      <div class="signature">
+
+      </div>
+    </div>
+    <div class="liners">
+      <div class="lcol1">
+        <hr>
+      </div>
+      <div class="lcol2">
+        01769201234
+      </div>
+      <div class="lcol3">
+        <hr>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
